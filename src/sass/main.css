@@ -20,4 +20,35 @@
   padding: 2px 6px;
   border-radius: 2px;
 }
+
+.container {
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: center; */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
