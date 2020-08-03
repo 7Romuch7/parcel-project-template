@@ -6,6 +6,101 @@
     <title>Заголовок страницы</title>
   </head>
   <body>
+    <!--  Наши контакты -->
+    <div class="contacts-section">
+      <section class="container">
+        <form class="contacts-form">
+          <h3 class="contacts-title">Онлайн-запись</h3>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="name" class="form-label">ИMЯ &#42</label>
+          </div>
+
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="tel" class="form-label">ТЕЛЕФОН &#42</label>
+          </div>
+
+          <div class="form-field textarea">
+            <textarea
+              class="textarea-input"
+              name="textarea"
+              id="coment"
+              placeholder=" "
+              cols="20"
+              rows="10"
+            ></textarea>
+            <label for="coment" class="form-label">СООБЩЕНИЕ</label>
+          </div>
+
+          <button class="knock" type="submit">ОТПРАВИТЬ</button>
+        </form>
+
+        <div class="contacts-block">
+          <div class="our-contacts">
+            <h3 class="contacts-title">Контакты</h3>
+            <address>
+              <ul>
+                <li>
+                  <p class="contacts-text">
+                    <svg
+                      class="icon-contacts"
+                      width=""
+                      height=""
+                      aria-label="coordinates"
+                    >
+                      <use href=""></use></svg>г. Киев, пр-т Леси Украинки, 26
+                  </p>
+                </li>
+                <li>
+                  <a class="contacts-text" href="tel:+380961111111">
+                    <svg
+                      class="icon-contacts"
+                      width=""
+                      height=""
+                      aria-label="call"
+                    >
+                      <use href=""></use></svg>+38 096 111 11 11</a
+                  >
+                </li>
+                <li>
+                  <a class="contacts-text" href="mailto:info@devstudio.com">
+                    <svg
+                      class="icon-contacts"
+                      width=""
+                      height=""
+                      aria-label="send E-mail"
+                    >
+                      <use href=""></use></svg>info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="working-hours">
+            <div class="">
+              <div class="line"></div>
+              <p class="contacts-text">ВРЕМЯ РАБОТЫ</p>
+              <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
 
