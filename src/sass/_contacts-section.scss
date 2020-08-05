@@ -3,7 +3,13 @@ ul {
   padding-left: 0;
 }
 a {
-  display: block;
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
 }
 
 .container {
@@ -21,14 +27,12 @@ a {
 
   @media screen and(min-width: 768px) {
     width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 100px 40px;
   }
 
   @media screen and(min-width: 1280px) {
     width: 1280px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 130px 40px;
   }
 }
 .contacts-section {
@@ -84,8 +88,11 @@ a {
   text-align: center;
   letter-spacing: 0.09em;
   display: block;
+  text-decoration: none;
   margin-top: 44px;
   padding: 12px 38px;
+  width: 160px;
+  height: 40px;
 
   margin-left: auto;
   margin-right: auto;
@@ -93,17 +100,36 @@ a {
   border-radius: 25px;
   color: #ffffff;
   background-color: inherit;
+  &:hover {
+    background-color: #ff6c00;
+    color: white;
+  }
 
   /* justify-content: center;
     align-items: center; */
 }
 .contacts-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9)),
-    url(../images/contacts-backgroundX1.jpg);
-  background-size: cover;
-  background-position: center;
-  /* opacity: 0, 1; */
+  width: 100%;
+  display: block;
+  position: relative;
+  &::after {
+    content: '';
+    background: url(../images/contacts-backgroundX1.jpg);
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
 }
+.contacts-block {
+  position: relative;
+  z-index: 1;
+}
+
 .contacts-text {
   font-family: Open Sans;
   font-style: normal;
@@ -111,14 +137,38 @@ a {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  /* text-decoration-line: underline; */
   color: #9da4bd;
   text-decoration: none;
+  margin-top: 18px;
+  padding: 2x 0;
+  display: flex;
+  align-items: center;
 }
-.icon-contacts {
+.contacts-icon {
   margin-right: 16px;
-  padding: 1px;
 }
+
 .working-hours {
   margin-top: 44px;
+}
+.underline {
+  text-decoration: underline;
+}
+.line {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-left: 80px;
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    left: 0px;
+    bottom: 55px;
+    background-color: rgba(157, 164, 189, 0.4);
+    /* transform: rotate(90deg); */
+  }
 }
