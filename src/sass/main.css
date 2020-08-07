@@ -899,32 +899,10 @@ h3 {
   padding: 0;
 }
 
-.container {
-  /* width: 100%; */
-  margin-left: auto;
-  margin-right: auto;
-  /* align-items: center; */
-}
-
-img {
-  display: block;
-}
-
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 @media screen and (max-width: 768px) {
   .img-for-tablet,
   .img-for-desktop {
     display: none;
-  }
-  .about-us-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 
@@ -947,10 +925,6 @@ p {
   .img-for-tablet-item:last-child {
     margin-bottom: 0;
   }
-  .about-us-section {
-    padding-top: 98px;
-    padding-bottom: 98px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -961,8 +935,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 130px;
-    padding-bottom: 130px;
   }
   .img-for-desktop {
     display: block;
