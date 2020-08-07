@@ -16,6 +16,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(17, 19, 25, 0.7),
+        rgba(17, 19, 25, 0.8)
+      ),
+      url('../images/services-bg@2.jpg');
+  }
+
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -28,6 +36,14 @@
         rgba(17, 19, 25, 0.8)
       ),
       url(../images/services-bg-tab@1.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(17, 19, 25, 0.7),
+          rgba(17, 19, 25, 0.8)
+        ),
+        url('../images/services-bg-tab@2.jpg');
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -42,6 +58,14 @@
         rgba(17, 19, 25, 0.8)
       ),
       url(../images/prices-bg-desktop@1.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(17, 19, 25, 0.7),
+          rgba(17, 19, 25, 0.8)
+        ),
+        url('../images/prices-bg-desktop@2.jpg');
+    }
   }
 }
 
@@ -86,8 +110,9 @@
   color: $white-color;
 }
 .overlay {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     padding: 30px;
+    width: 100%;
 
     background-image: linear-gradient(
       180deg,
@@ -95,20 +120,22 @@
       rgba(23, 26, 36, 0.2) 100%
     );
 
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      padding: 0;
-    }
+    // @media screen and (min-width: $desktop) {
+    //   // display: flex;
+    //   // flex-direction: row;
+    //   // flex-wrap: nowrap;
+    //   // padding: 0;
+    // }
   }
 }
 .overlay-desktop {
   @media screen and (min-width: $desktop) {
+    display: block;
     padding: 30px 40px 30px 40px;
     margin: 0;
-    min-width: calc(50%-1px);
-    display: inline-block;
+    // min-width: calc(49.7%);
+    width: 50%;
+    // display: inline-block;
 
     background-image: linear-gradient(
       180deg,
@@ -119,8 +146,10 @@
 }
 .price-list {
   list-style: none;
+
   padding: 0;
   margin: 0;
+  // width: 100%;
 
   font-family: Open Sans;
   font-style: normal;
@@ -130,72 +159,55 @@
   letter-spacing: 0.02em;
 
   color: $text-color;
+
   @media screen and (min-width: $tablet) {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .item-service {
   margin-bottom: 20px;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
-
-.element {
-  position: relative;
-}
-.element::after {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  right: 0;
-  transform: translateX(105%);
-
-  // width: 100%;
+.line {
   height: 1px;
 
-  background-color: rgba(157, 164, 189, 0.12);
-}
-.element.one::after {
-  width: 115%;
-}
-.element.two::after {
-  width: 125%;
-}
-.element.three::after {
-  width: 178%;
-}
-.element.four::after {
-  width: 50%;
-}
-.element.five::after {
   width: 100%;
+  background-color: rgba(157, 164, 189, 0.12);
+
+  transform: translateY(22px);
+}
+.element {
+  display: block;
+  margin-left: 0;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+.price {
+  display: block;
+  margin-right: 0;
+  margin-left: 6px;
+  white-space: nowrap;
 }
 
-.element.six::after {
-  width: 80%;
-}
-.element.seven::after {
-  width: 40%;
-}
-.element.eight::after {
-  width: 50%;
-}
-
-// .element,
-// .price {
-//   // display: block;
-// }
-// .element {
-//   // align-self: flex-start;
-// }
-// .price {
-//   // justify-content: end;
-// }
 .knock.recording {
   background-color: transparent;
   text-transform: uppercase;
   margin-bottom: 0;
-  padding: 0;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
 }
