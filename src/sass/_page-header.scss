@@ -69,6 +69,12 @@
             background-image: url("../images/стрижка3-2x.jpg");
         }
     }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: start;
+        padding-left: 100px;
+    }
 }
 
 .container-hero {
@@ -87,7 +93,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 500px;
+        text-align: start;
+        max-width: 400px;
     }
 }
 
@@ -136,17 +143,55 @@
     color: $text-color;
 }
 
-.slider {
-    display: block;
-    width: 18px;
-    height: 2px;
-    background-color: $white-color;
+.gallery {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
-    &::before {
-        content: '';
-        width: 8px;
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 46%;
+        right: 39px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: 47%;
+        right: 55px;
+    }
+}
+
+.slider {
+
+    @media screen and (min-width: $tablet) {
+        position: relative;
+
+        display: block;
+        width: 18px;
         height: 2px;
-        background-color: $text-color;
+        background-color: $white-color;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: 0;
+
+            width: 8px;
+            height: 2px;
+            background-color: $text-color;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 0;
+
+            width: 8px;
+            height: 2px;
+            background-color: $text-color;
+        }
     }
 }
 
@@ -161,6 +206,12 @@
         right: 39px;
 
         display: flex;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        bottom: 40px;
+        right: 55px;
     }
 }
 
@@ -216,14 +267,16 @@
 
 .icon-logo {
     position: absolute;
-    top: 32px;
-    left: 50px;
 
     @media screen and (max-width: 767px) {
+        top: 40px;
+        left: 31px;
         fill: $white-color;
     }
 
     @media screen and (min-width: $tablet) {
+        top: 32px;
+        left: 50px;
         width: 69px;
         fill: $title-color;
     }
@@ -279,6 +332,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
 
     width: 40px;
     height: 40px;
@@ -293,7 +347,7 @@
         top: 100%;
         right: 0;
 
-        padding-top: 48px;
+        padding-top: 118px;
         width: 337px;
         height: 796px;
 
@@ -482,6 +536,10 @@
         color: $white-color;
         background-color: $hover-color;
     }
+}
+
+.recording {
+    text-decoration: none;
 }
 
 .social-link {
