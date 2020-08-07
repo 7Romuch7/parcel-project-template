@@ -16,6 +16,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../images/services-bg@2.jpg');
+  }
+
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -28,6 +32,10 @@
         rgba(17, 19, 25, 0.8)
       ),
       url(../images/services-bg-tab@1.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/services-bg-tab@2.jpg');
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -42,6 +50,10 @@
         rgba(17, 19, 25, 0.8)
       ),
       url(../images/prices-bg-desktop@1.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/prices-bg-desktop@2.jpg');
+    }
   }
 }
 
