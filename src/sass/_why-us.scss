@@ -11,6 +11,17 @@ p{
   margin-right: auto;
   padding-top: 84px;
   padding-bottom: 84px;
+
+  // @media screen and (min-width:$tablet){
+    
+  // }
+}
+
+.container-title {
+  max-width: 420px;
+  margin: 0;
+  padding: 0;
+
 }
 
 .section-manifest {
@@ -21,6 +32,19 @@ p{
   text-transform: uppercase;
   margin-bottom: 20px;
   color: $title-color;
+
+  &.line {
+    &::before {
+      content: " ";
+    /* position: absolute; */
+    width: 60px;
+    height: 1px;
+    /* left: 0px; */
+    /* bottom: 60px; */
+    background-color: rgba(157, 164, 189, 0.6);
+    margin-right: 20px;
+    }
+  }
 }
 
 .title-section {
@@ -43,22 +67,18 @@ p{
   margin-bottom: 44px; 
 }
 
-// .statistics {
-
 .down {
   transform: translateY(10%);
   }
-// }
+
 
 .statistics {
   // display: flex;
   // flex-wrap: wrap;  
     // margin: -15px;
   // display: grid; 
-  // grid-template-columns: repeat(2, 1fr); 
- 
-  // width: 480px;
-  
+  // grid-template-columns: repeat(2, 1fr);  
+  // width: 480px;  
 
   & .item {
     font-weight: 600;
@@ -96,8 +116,7 @@ p{
     line-height: 1.35;
     letter-spacing: 0.05em;
     margin-bottom: 6px;
-    color: $title-color;
-    
+    color: $title-color;    
 
     &::after {
       content: " + ";
