@@ -40,37 +40,6 @@
   list-style: none;
 }
 
-.container {
-  /* width: 100%; */
-  margin-left: auto;
-  margin-right: auto;
-  /* align-items: center; */
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    padding-left: 31px;
-    padding-right: 31px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-}
-
 .portfolio-container {
   width: 480px;
   height: 1784px;
@@ -83,7 +52,7 @@
   display: inline;
 }
 
-.portfolio-box > li:nth-child(-n+3) {
+.portfolio-box > li:nth-child(-n + 3) {
   margin: 30px;
 }
 
@@ -117,43 +86,200 @@
   fill: #303030;
 }
 
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-.container {
+.services {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    padding: 84px 31px;
-  }
+  min-height: 826x;
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url(../images/services-bg@1.jpg);
+  background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url(../images/services-bg@1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
+  .services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 39px;
+    padding-right: 39px;
+    min-height: 858px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url(../images/services-bg-tab@1.jpg);
+    background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url(../images/services-bg-tab@1.jpg);
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-top: 130px;
+    padding-bottom: 130px;
     padding-left: 55px;
     padding-right: 55px;
+    min-height: 718px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url(../images/prices-bg-desktop@1.jpg);
+    background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url(../images/prices-bg-desktop@1.jpg);
   }
+}
+
+.section-subtitle {
+  position: relative;
+  margin: 0 0 20px 80px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.section-subtitle::before {
+  content: '';
+  position: absolute;
+  left: -80px;
+  top: 7px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.section-title {
+  margin: 0 0 44px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .overlay {
+    padding: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1200px) {
+  .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay-desktop {
+    padding: 30px 40px 30px 40px;
+    margin: 0;
+    min-width: calc(50%-1px);
+    display: inline-block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+@media screen and (min-width: 768px) {
+  .price-list {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.item-service {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.element {
+  position: relative;
+}
+
+.element::after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.element.one::after {
+  width: 115%;
+}
+
+.element.two::after {
+  width: 125%;
+}
+
+.element.three::after {
+  width: 178%;
+}
+
+.element.four::after {
+  width: 50%;
+}
+
+.element.five::after {
+  width: 100%;
+}
+
+.element.six::after {
+  width: 80%;
+}
+
+.element.seven::after {
+  width: 40%;
+}
+
+.element.eight::after {
+  width: 50%;
+}
+
+.knock.recording {
+  background-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .contacts-section {
@@ -207,7 +333,7 @@ ul {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   text-align: center;
   letter-spacing: 0.09em;
   display: block;
