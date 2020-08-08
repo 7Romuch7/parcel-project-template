@@ -3,19 +3,36 @@ p{
   margin: 0;
 }
 
-.section-whyUs {
-  background-color: $white-color;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 84px;
-  padding-bottom: 84px;
- 
+// .section-whyUs {
+//   background-color: $white-color;
+// }
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 84px;
+//   padding-bottom: 84px;  
+// }
+
+.flex-reverse{
+
+  @media screen and(min-width:$mobile){
+    max-width: 418px;
+  }
+
+  @media screen and(min-width:$tablet){
+    max-width: 689px;
+  }
+
+  @media screen and(min-width:$desktop){
+    max-width: 1280px;
+  }
+
   @media screen and(min-width: $desktop){
     display: flex;
     flex-direction: row-reverse;
   }
+
+
 }
 
 .container-title {
@@ -34,8 +51,11 @@ p{
   }
 }
 
-.section-manifest {
-  font-weight: $basic-font;
+// .section-manifest {
+  
+
+  .line-up{
+    font-weight: $basic-font;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -44,20 +64,19 @@ p{
   margin-bottom: 20px;
   color: $title-color;
 
-  // &.line {
-  //   &::before {
-  //     content: " ";
-  //   /* position: absolute; */
-  //   width: 60px;
-  //   height: 1px;
-  //   /* left: 0px; */
-  //   /* bottom: 60px; */
-  //   background-color: rgba(157, 164, 189, 0.6);
-  //   margin-right: 20px;
-  //   }
-  // }
-  // color: $title-color;  
-}
+    &::before {
+      content: '';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 1px;
+      width: 60px;  
+      margin-right: 20px;
+  
+      background-color: $title-color;
+    }
+  }
+// }
 
 // .line {
 //   &::before {
@@ -107,12 +126,16 @@ p{
 .down {
   transform: translateY(10%);
   margin-right: auto;
+
+  @media screen and(min-width: $tablet){
+    margin-left: auto;
   }
+}
 
 
 .statistics {
  
-  margin-left: auto;
+  
 
   & .statistics-item {
     font-weight: 600;
@@ -137,6 +160,11 @@ p{
       max-width: 210px;
     }
   }
+
+  @media screen and(min-width: $tablet){
+    margin-left: auto;
+  }
+  
 }
 
 .statistics {
