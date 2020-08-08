@@ -76,9 +76,6 @@
   }
   &::before {
     content: '';
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 1px;
     width: 60px;
 
@@ -122,8 +119,7 @@
 // button
 .apointment-btn {
   display: block;
-  margin-bottom: 0;
-  padding: 0;
+  padding: 12px 20px;
 
   font-family: $basic-font;
   font-weight: 600;
@@ -132,9 +128,6 @@
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
-  width: 160px;
-  height: 40px;
 
   border: 1px solid $hover-color;
   background-color: transparent;
