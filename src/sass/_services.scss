@@ -68,18 +68,18 @@
     }
   }
 }
-// .container {
-//   padding-left: 31px;
-//   padding-right: 31px;
-//   @media screen and (min-width: $tablet) {
-//     padding-left: 39px;
-//     padding-right: 39px;
-//   }
-//   @media screen and (min-width: $tablet) {
-//     padding-left: 55px;
-//     padding-right: 55px;
-//   }
-// }
+.container.addstyles {
+  padding-left: 31px;
+  padding-right: 31px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
 .section-subtitle {
   position: relative;
   margin: 0 0 20px 80px;
