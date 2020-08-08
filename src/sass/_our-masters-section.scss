@@ -1,17 +1,54 @@
 .master-section {
   background-color: $our-masters-section-bgr;
-  // padding-top: 84px;
-  // padding-bottom: 84px;
+}
 
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 100px;
-  //   padding-bottom: 100px;
-  // }
+.container-masters {
+  @media screen and (max-width: 767px) {
+    max-width: 418px;
+    padding: 15px;
+  }
 
-  // @media screen and (min-width: 1280px) {
-  //   padding-top: 130px;
-  //   padding-bottom: 130px;
-  // }
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+    padding-left: 140px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 140px;
+  }
+}
+
+.section-manifest {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+    font-family: $basic-font;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $title-color;
+
+
+    &::before {
+      content: '';
+      height: 1px;
+      width: 60px;
+      margin-right: 20px;
+      background-color: $title-color;
+    }
+}
+
+.title-master {
+  margin-bottom: 44px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $title-color;
 }
 
 // .master-container {
