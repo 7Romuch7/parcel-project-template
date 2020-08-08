@@ -80,6 +80,7 @@ p {
   background-color: inherit;
   font-size: 18px;
   color: $white-color;
+  resize: none;
   &:hover,
   &:focus {
     outline: none;
