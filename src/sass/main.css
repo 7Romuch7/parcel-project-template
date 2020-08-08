@@ -8,6 +8,7 @@
 /* Шрифты */
 .body {
   font-family: Open Sans;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -188,6 +189,18 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 100px;
+  }
+}
+
 .container-hero {
   padding: 0;
   width: unset;
@@ -208,7 +221,8 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .content-container {
-    max-width: 500px;
+    text-align: start;
+    max-width: 400px;
   }
 }
 
@@ -266,18 +280,54 @@ h3 {
   color: #9da4bd;
 }
 
-.slider {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #ffffff;
+@media screen and (max-width: 767px) {
+  .gallery {
+    display: none;
+  }
 }
 
-.slider::before {
-  content: '';
-  width: 8px;
-  height: 2px;
-  background-color: #9da4bd;
+@media screen and (min-width: 768px) {
+  .gallery {
+    position: absolute;
+    top: 46%;
+    right: 39px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    position: absolute;
+    top: 47%;
+    right: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .slider::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 8px;
+    height: 2px;
+    background-color: #9da4bd;
+  }
+  .slider::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 8px;
+    height: 2px;
+    background-color: #9da4bd;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -294,6 +344,14 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider-list {
+    position: absolute;
+    bottom: 40px;
+    right: 55px;
   }
 }
 
@@ -342,18 +400,20 @@ h3 {
 
 .icon-logo {
   position: absolute;
-  top: 32px;
-  left: 50px;
 }
 
 @media screen and (max-width: 767px) {
   .icon-logo {
+    top: 40px;
+    left: 31px;
     fill: #ffffff;
   }
 }
 
 @media screen and (min-width: 768px) {
   .icon-logo {
+    top: 32px;
+    left: 50px;
     width: 69px;
     fill: #303030;
   }
@@ -416,6 +476,7 @@ h3 {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
   width: 40px;
   height: 40px;
   fill: #303030;
@@ -427,7 +488,7 @@ h3 {
     position: absolute;
     top: 100%;
     right: 0;
-    padding-top: 48px;
+    padding-top: 118px;
     width: 337px;
     height: 796px;
     background-color: #ffffff;
@@ -667,6 +728,10 @@ h3 {
   background-color: #ff6c00;
 }
 
+.recording {
+  text-decoration: none;
+}
+
 .social-link {
   font-weight: 600;
   font-size: 14px;
@@ -716,6 +781,13 @@ h3 {
   background-size: cover;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .services {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url("../images/services-bg@2.jpg");
+    background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url("../images/services-bg@2.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .services {
     padding-top: 100px;
@@ -728,6 +800,13 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url("../images/services-bg-tab@2.jpg");
+    background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url("../images/services-bg-tab@2.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .services {
     padding-top: 130px;
@@ -737,6 +816,13 @@ h3 {
     min-height: 718px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url(../images/prices-bg-desktop@1.jpg);
     background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url(../images/prices-bg-desktop@1.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.8))), url("../images/prices-bg-desktop@2.jpg");
+    background-image: linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.8)), url("../images/prices-bg-desktop@2.jpg");
   }
 }
 
@@ -781,35 +867,21 @@ h3 {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .overlay {
     padding: 30px;
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
     background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 1200px) {
-  .overlay {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding: 0;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .overlay-desktop {
+    display: block;
     padding: 30px 40px 30px 40px;
     margin: 0;
-    min-width: calc(50%-1px);
-    display: inline-block;
+    width: 50%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
     background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
@@ -831,7 +903,21 @@ h3 {
 @media screen and (min-width: 768px) {
   .price-list {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -840,63 +926,45 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(157, 164, 189, 0.12);
+  -webkit-transform: translateY(22px);
+          transform: translateY(22px);
 }
 
 .element {
-  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 6px;
+  white-space: nowrap;
 }
 
-.element::after {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  right: 0;
-  -webkit-transform: translateX(105%);
-          transform: translateX(105%);
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-}
-
-.element.one::after {
-  width: 115%;
-}
-
-.element.two::after {
-  width: 125%;
-}
-
-.element.three::after {
-  width: 178%;
-}
-
-.element.four::after {
-  width: 50%;
-}
-
-.element.five::after {
-  width: 100%;
-}
-
-.element.six::after {
-  width: 80%;
-}
-
-.element.seven::after {
-  width: 40%;
-}
-
-.element.eight::after {
-  width: 50%;
+.price {
+  display: block;
+  margin-right: 0;
+  margin-left: 6px;
+  white-space: nowrap;
 }
 
 .knock.recording {
   background-color: transparent;
   text-transform: uppercase;
   margin-bottom: 0;
-  padding: 0;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.knock.recording:hover, .knock.recording:focus {
+  background-color: #ff6c00;
 }
 
 @media screen and (max-width: 768px) {
