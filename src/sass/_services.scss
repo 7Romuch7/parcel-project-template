@@ -1,11 +1,11 @@
 .services {
-  padding-top: 84px;
-  padding-bottom: 84px;
-  padding-left: 31px;
-  padding-right: 31px;
+  // padding-top: 84px;
+  // padding-bottom: 84px;
+  // padding-left: 31px;
+  // padding-right: 31px;
 
-  width: 100%;
-  min-height: 826x;
+  // width: 100%;
+  // min-height: 826x;
 
   background-color: black;
   background-image: linear-gradient(
@@ -25,11 +25,11 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 39px;
-    padding-right: 39px;
-    min-height: 858px;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+    // padding-left: 39px;
+    // padding-right: 39px;
+    // min-height: 858px;
 
     background-image: linear-gradient(
         rgba(17, 19, 25, 0.7),
@@ -47,11 +47,11 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    padding-left: 55px;
-    padding-right: 55px;
-    min-height: 718px;
+    // padding-top: 130px;
+    // padding-bottom: 130px;
+    // padding-left: 55px;
+    // padding-right: 55px;
+    // min-height: 718px;
 
     background-image: linear-gradient(
         rgba(17, 19, 25, 0.7),
@@ -71,7 +71,7 @@
 
 .section-subtitle {
   position: relative;
-  margin: 0 0 20px 80px;
+  margin: 0 0 20px 111px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -97,9 +97,17 @@
 
     background-color: rgba(157, 164, 189, 0.6);
   }
+
+  @media screen and (min-width: tablet) {
+    margin: 0 0 20px 119px;
+  }
+  @media screen and (min-width: desktop) {
+    margin: 0 0 20px 135px;
+  }
 }
 .section-title {
-  margin: 0 0 44px 0;
+  margin: 0 0 44px 31px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -108,6 +116,13 @@
   letter-spacing: 0.05em;
 
   color: $white-color;
+
+  @media screen and (min-width: tablet) {
+    margin: 0 0 20px 39px;
+  }
+  @media screen and (min-width: desktop) {
+    margin: 0 0 20px 55px;
+  }
 }
 .overlay {
   @media screen and (max-width: 1279px) {
@@ -198,11 +213,34 @@
   white-space: nowrap;
 }
 
-.knock.recording {
+.recording {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+
+  // margin-top: 50px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid $hover-color;
+  border-radius: 25px;
+  color: $white-color;
+  // white-space: nowrap;
+  box-sizing: border-box;
+
   background-color: transparent;
   text-transform: uppercase;
-  margin-bottom: 0;
+
   cursor: pointer;
+
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -210,4 +248,10 @@
   &:focus {
     background-color: $hover-color;
   }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  // margin-left: auto;
+  // margin-right: auto;
 }
