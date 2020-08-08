@@ -1,63 +1,47 @@
 .portfolio-container {
     position: relative;
-    width: $mobile;
+    // width: $mobile;
     // height: 1784px;
-    padding: 15px 0px 15px 0px;
-    margin: 0px;
-    margin-top: 200px;
-   
+    // padding: 84px 0px 84px 0px;
+    // margin: 0px;
     background-color: #e5e5e5;
    
-    @media screen and (min-height: $tablet) {
-     width: $tablet;
-     padding: 39px 0px 39px 0px;
-     margin: 0px;
-    }
+    // @media screen and (min-height: $tablet) {
+    //  width: $tablet;
+    // //  padding: 0px 39px 0px 39px;
+    //  margin: 0px;
+    // }
    
-    @media screen and (min-height: $desktop) {
-     width: $desktop;
-     padding: 55px 0px 55px 0px;
-     margin: 0px;
-    }
-   }
-   
-   .portfolio-span {
-    margin: 0px;
-    // width: $mobile;
-    // height: 42px;
-    // justify-content: ;
-    // vertical-align: center;
-   }
-   
-   .portfolio-svg {
-    box-sizing: content-box;
-   }
-   
+    // @media screen and (min-height: $desktop) {
+    //  width: $desktop;
+    //  padding: 0px 55px 0px 55px;
+    //  margin: 0px;
+    // }
+}
+
+
+// отступы фотографий (нижний:к 3-м пепвым фото)
    .portfolio-box > li:nth-child(-n + 3) {
     margin-bottom: 30px;
-   
-    @media screen and (min-height: $desktop) {
-     margin-right: 30px;
-    }
+
+    // @media screen and (min-height: $desktop) {
+    //  margin-right: 30px;
+    // }
    }
    
-   .portfolio-box > li:nth-child(-n + 3) {
-    margin-bottom: 30px;
-   
-    @media screen and (min-height: $desktop) {
-     margin-right: 30px;
-    }
-   }
-   
-   .portfolio-box > li:first-child {
-    margin-bottom: 30px;
-   
+// правый отступ первой фотографий (длязазора меж колонками)
     @media screen and (min-height: $tablet) {
+     .portfolio-box > li:first-child {
      margin-right: 30px;
-     margin-bottom: 30px;
+    }
+// отступы фотографий (правий:к 3-м пепвым фото)
+    @media screen and (min-height: $desktop) {
+    .portfolio-box > li:nth-child(-n + 3) {
+        margin-right: 30px;
     }
    }
    
+   // стилизирую li чтоб облягала фотографию
    .portfolio-box > li {
     // height: 360px;
     box-sizing: content-box;
@@ -66,25 +50,29 @@
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-   
+//    li распложыть с лева на право
     @media screen and (min-height: $tablet) {
+    flex-direction: row ;
      height: 360px;
-     width: 330px;
     }
    }
-   
+   //    обнуляю отступы img
    .portfolio img {
     padding: 0px;
     margin: 0px;
    }
-   
+//    обнуляю отступы portfolio-box
    .portfolio-box {
     padding: 0px;
     margin: 0px;
     display: block;
     box-sizing: border-box;
+
+    @media screen and (min-height: $tablet) {
+        display: flex;
+       }
    }
-   
+//    img относительно контейнера cover
    .portfolio-Razor,
    .portfolio-towe,
    .portfolio-shavin,
@@ -95,17 +83,13 @@
     width: $mobile;
     padding: 0px;
     margin: 0px;
-   
+
     @media screen and (min-height: $tablet) {
      width: 330px;
-     padding: 0px;
-     margin: 0px;
     }
    
     @media screen and (min-height: $desktop) {
      width: 270px;
-     padding: 0px;
-     margin: 0px;
     }
    }
    
