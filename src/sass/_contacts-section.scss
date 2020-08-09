@@ -181,7 +181,7 @@ p {
   letter-spacing: 0.02em;
   color: $text-color;
   text-decoration: none;
-  margin-top: 18px;
+  margin-top: 20px;
   padding: 2px 0;
   display: flex;
   align-items: center;
@@ -201,6 +201,7 @@ p {
   line-height: 1.36;
   letter-spacing: 0.1em;
   color: $white-color;
+  margin-bottom: 20px;
 
   &::before {
     content: ' ';
@@ -211,6 +212,7 @@ p {
     /* bottom: 60px; */
     background-color: $text-color3;
     margin-right: 20px;
+    
   }
 }
 
