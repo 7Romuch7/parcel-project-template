@@ -1,147 +1,95 @@
-.portfolio-container {
-    position: relative;
-    width: $mobile;
-    // height: 1784px;
-    padding: 15px 0px 15px 0px;
-    margin: 0px;
-    margin-top: 200px;
-   
-    background-color: #e5e5e5;
-   
-    @media screen and (min-height: $tablet) {
-     width: $tablet;
-     padding: 39px 0px 39px 0px;
-     margin: 0px;
-    }
-   
-    @media screen and (min-height: $desktop) {
-     width: $desktop;
-     padding: 55px 0px 55px 0px;
-     margin: 0px;
-    }
-   }
-   
-   .portfolio-span {
-    margin: 0px;
-    // width: $mobile;
+// // стили заголовка с риской
+.portfolio-manifest {
+    display: flex;
+    align-items: left;
+    padding-right: 31px;
+    // width: 338px;
     // height: 42px;
-    // justify-content: ;
-    // vertical-align: center;
-   }
-   
-   .portfolio-svg {
-    box-sizing: content-box;
-   }
-   
-//    .portfolio-box > li:nth-child(-n + 3) {
-//     margin-bottom: 30px;
-   
-//     @media screen and (min-height: $desktop) {
-//      margin-right: 30px;
-//     }
-//    }
-   
-   .portfolio-box > li:nth-child(-n + 3) {
-    margin-bottom: 30px;
-   
-    @media screen and (min-height: $desktop) {
-     margin-right: 30px;
-    }
-   }
-   
-   .portfolio-box > li:first-child {
-    margin-bottom: 30px;
-   
-    @media screen and (min-height: $tablet) {
-     margin-right: 30px;
-     margin-bottom: 30px;
-    }
-   }
-   
-   .portfolio-box > li {
-    // height: 360px;
-    box-sizing: content-box;
-    text-decoration: none;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-   
-    @media screen and (min-height: $tablet) {
-     height: 360px;
-     width: 330px;
-    }
-   }
-   
-   .portfolio img {
-    padding: 0px;
-    margin: 0px;
-   }
-   
-   .portfolio-box {
-    padding: 0px;
-    margin: 0px;
-    display: block;
-    box-sizing: border-box;
-   }
-   
-   .portfolio-Razor,
-   .portfolio-towe,
-   .portfolio-shavin,
-   .portfolio-heirbrush {
-    display: inline-block;
-    background-size: cover;
-    background-repeat: no-repeat center;
-    width: $mobile;
-    padding: 0px;
-    margin: 0px;
-   
-    @media screen and (min-height: $tablet) {
-     width: 330px;
-     padding: 0px;
-     margin: 0px;
-    }
-   
-    @media screen and (min-height: $desktop) {
-     width: 270px;
-     padding: 0px;
-     margin: 0px;
-    }
-   }
-   
-   .small-text {
-    width: 338px;
-    height: 42px;
-    padding: 0px;
-    margin: 0px 0px 0px 80px;
-    text-align: left;
-   
+    margin: 0px 0px 44px 0px;
     font-family: $basic-font;
     font-style: normal;
     font-weight: 600;
+    font-weight: 600;
     font-size: 11px;
-    line-height: 1.9;
-    /* or 191% */
+    line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    fill: $title-color;
     color: $title-color;
-   
-    @media screen and (min-height: $tablet) {
-     width: 343px;
-     line-height: 15px;
+    vertical-align: center;
+    &::before {
+        content: '';
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 1px;
+        width: 60px;
+        margin-right: 20px;
+        background-color: $title-color;
+        // border-bottom: 1px solid #303030;
+        //  position: absolute;
     }
-   }
-   
-   section .small-text::before {
+    @media screen and (min-height: $tablet) {
+        width: 343px;
+        height: 15px;
+        line-height: 15px;
+    }
+}
+.portfolio-masters-block {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: calc($tablet - 1px)) {
+        max-width: 418px;
+    }
+    @media screen and(min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        max-width: 690px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 1170px;
+    }
+}
+.portfolio-list {
     display: block;
-    width: 60px;
-    height: 1px;
-    content: '';
-    border-bottom: 1px solid $title-color;
-    position: absolute;
-    left: 15px;
-    top: 70px;
-    // top: 4%;
-    color: $title-color;
-   }
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.portfolio-list.portfolio-list > li:nth-child(-n + 3) {
+    @media screen and (max-width: calc($tablet - 1px)) {
+        margin-bottom: 30px;
+    }
+}
+.portfolio-list.portfolio-list > li:nth-child(2n) {
+    @media screen and(min-width: $tablet) {
+        margin-left: 30px;
+    }
+}
+.portfolio-list.portfolio-list > li:nth-child(-n + 2) {
+    @media screen and(min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        margin-bottom: 30px;
+    }
+}
+.portfolio-list.portfolio-list > li:nth-child(3) {
+    @media screen and(min-width: $desktop) {
+        margin-left: 30px;
+    }
+}
+/*оформление  карточки участника команды*/
+// .portfolio-list-item {
+//  @media screen and (max-width: calc($desktop - 1px)) {
+//      &:not(:last-child) {
+//          margin-bottom: 30px;
+//      }
+//  }
+//  @media screen and (min-width: $desktop) {
+//      // width: (100% / 4);
+//      margin-bottom: 0;
+//      &:not(:last-child) {
+//          margin-right: 30px;
+//      }
+//  }
+// }
