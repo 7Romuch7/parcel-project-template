@@ -88,3 +88,52 @@ h3 {
 
 //   color: $title-color;
 // }
+
+/*Утилитарный класс для текста-манифеста секции (с палкой)*/
+
+.section-manifest {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $title-color;
+
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1px;
+    width: 60px;
+
+    margin-right: 20px;
+
+    background-color: $title-color;
+  }
+}
+
+/*Класс для Заголовка секции*/
+.section-title-main {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.1785;
+  letter-spacing: 0.05em;
+
+  color: $title-color;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: 49px;
+  }
+}
