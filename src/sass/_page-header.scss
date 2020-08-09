@@ -24,6 +24,48 @@
     }
 }
 
+.social-channel {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+
+    @media screen and (min-width: $tablet) {
+        &-item + &-item {
+            margin-left: 40px;
+        }
+    }
+}
+
+.social-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $title-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+.Instagram {
+        display: flex;
+        align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+
+    &::before {
+        content: '';
+        height: 1px;
+        width: 60px;
+        margin-right: 20px;
+        background-color: $title-color;
+    }
+}
+
 .hero-wrapper {
     display: flex;
 }
@@ -451,35 +493,6 @@
     }
 }
 
-.social-channel {
-    display: flex;
-    align-items: center;
-    transform: rotate(-90deg);
-
-    @media screen and (min-width: $tablet) {
-        &-item + &-item {
-            margin-left: 40px;
-        }
-    }
-}
-
-.Instagram {
-        display: flex;
-        align-items: center;
-
-    @media screen and (min-width: $tablet) {
-        justify-content: center;
-    }
-
-    &::before {
-        content: '';
-        height: 1px;
-        width: 60px;
-        margin-right: 20px;
-        background-color: $title-color;
-    }
-}
-
 .number-fhone {
     font-weight: 600;
     font-size: 18px;
@@ -541,19 +554,6 @@
 
 .recording {
     text-decoration: none;
-}
-
-.social-link {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: $title-color;
-    text-decoration: none;
-
-    &:hover {
-        color: $hover-color;
-    }
 }
 
 .social-list {

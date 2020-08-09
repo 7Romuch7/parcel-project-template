@@ -26,7 +26,7 @@ a {
 
 .right-part-footer {
   display: flex;
-  padding-right: 55px;
+  justify-content: center;
   margin-left: auto;
   align-items: center;
 }
@@ -34,9 +34,9 @@ a {
 .instagram {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #080101;
+  color: $title-color;
 }
 
 .right-part-footer::before {
@@ -57,7 +57,7 @@ a {
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.2em;
-  color: #080101;
+  color: $title-color;
   padding-left: 40px;
 }
 
