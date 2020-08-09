@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .img-for-tablet,
   .img-for-desktop {
     display: none;
@@ -8,6 +8,10 @@
 @media screen and (min-width: 768px) {
   .img-for-desktop {
     display: none;
+  }
+
+  .img-for-tablet {
+    display: block;
   }
 
   .br {
@@ -144,6 +148,19 @@
   }
 }
 
-.center {
+.contact-form-link {
+  display: inline-block;
   text-decoration: none;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-us-desription {
+    position: relative;
+  }
+  .contact-form-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
