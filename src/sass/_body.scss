@@ -124,16 +124,16 @@ h3 {
 /*Класс для Заголовка секции*/
 .section-title-main {
   font-weight: bold;
-  font-size: 28px;
-  line-height: 1.1785;
+  font-size: 42px;
+  line-height: 1.1666;
   letter-spacing: 0.05em;
 
   color: $title-color;
 
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 42px;
-    line-height: 49px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   font-size: 42px;
+  //   line-height: 1.1666;
+  // }
 }
