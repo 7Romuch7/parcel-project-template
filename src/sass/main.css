@@ -1925,8 +1925,6 @@ p {
   padding-right: 31px;
   margin: 0px 0px 44px 0px;
   font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -1941,24 +1939,10 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 1px;
   width: 60px;
   margin-right: 20px;
   background-color: #303030;
-}
-
-@media screen and (min-height: 768px) {
-  .portfolio-manifest {
-    width: 343px;
-    height: 15px;
-    line-height: 15px;
-  }
 }
 
 .portfolio-masters-block {
@@ -1966,13 +1950,13 @@ p {
   margin-right: auto;
 }
 
-@media screen and (max-width: calc($tablet - 1px)) {
+@media screen and (max-width: 767px) {
   .portfolio-masters-block {
     max-width: 418px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: calc($desktop - 1px)) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-masters-block {
     max-width: 690px;
   }
@@ -1987,8 +1971,6 @@ p {
 .portfolio-list {
   display: block;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2004,31 +1986,30 @@ p {
   }
 }
 
-@media screen and (max-width: calc($tablet - 1px)) {
-  .portfolio-list.portfolio-list > li:nth-child(-n + 3) {
+@media screen and (max-width: 767px) {
+  .portfolio-list > li:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-list.portfolio-list > li:nth-child(2n) {
+  .portfolio-list > li:nth-child(2n) {
     margin-left: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: calc($desktop - 1px)) {
-  .portfolio-list.portfolio-list > li:nth-child(-n + 2) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list > li:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio-list.portfolio-list > li:nth-child(3) {
+  .portfolio-list > li:nth-child(3) {
     margin-left: 30px;
   }
 }
 
-/*оформление  карточки участника команды*/
 a {
   text-decoration: none;
 }
