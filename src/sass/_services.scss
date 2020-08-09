@@ -137,9 +137,8 @@
     display: block;
     padding: 30px 40px 30px 40px;
     margin: 0;
-    // min-width: calc(49.7%);
+
     width: 50%;
-    // display: inline-block;
 
     background-image: linear-gradient(
       180deg,
@@ -236,14 +235,8 @@
   &:focus {
     background-color: $hover-color;
   }
-  .center {
-    // display: flex;
-    // justify-content: center;
-
-    margin-right: auto;
-    margin-left: auto;
-
-    // display: block;
-    // text-align: center;
-  }
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
