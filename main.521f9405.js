@@ -184,16 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\стрижка1.jpg":[["стрижка1.a2faef16.jpg","images/стрижка1.jpg"],"images/стрижка1.jpg"],"./..\\images\\стрижка1-2x.jpg":[["стрижка1-2x.667cd721.jpg","images/стрижка1-2x.jpg"],"images/стрижка1-2x.jpg"],"./..\\images\\стрижка2.jpg":[["стрижка2.876f7b82.jpg","images/стрижка2.jpg"],"images/стрижка2.jpg"],"./..\\images\\стрижка2-2x.jpg":[["стрижка2-2x.2c803777.jpg","images/стрижка2-2x.jpg"],"images/стрижка2-2x.jpg"],"./..\\images\\стрижка3.jpg":[["стрижка3.41196f0e.jpg","images/стрижка3.jpg"],"images/стрижка3.jpg"],"./..\\images\\стрижка3-2x.jpg":[["стрижка3-2x.658b7d87.jpg","images/стрижка3-2x.jpg"],"images/стрижка3-2x.jpg"],"./..\\images\\services-bg@1.jpg":[["services-bg@1.4b2bc2f5.jpg","images/services-bg@1.jpg"],"images/services-bg@1.jpg"],"./..\\images\\services-bg@2.jpg":[["services-bg@2.b7970889.jpg","images/services-bg@2.jpg"],"images/services-bg@2.jpg"],"./..\\images\\services-bg-tab@1.jpg":[["services-bg-tab@1.b3e5b96a.jpg","images/services-bg-tab@1.jpg"],"images/services-bg-tab@1.jpg"],"./..\\images\\services-bg-tab@2.jpg":[["services-bg-tab@2.985a825f.jpg","images/services-bg-tab@2.jpg"],"images/services-bg-tab@2.jpg"],"./..\\images\\prices-bg-desktop@1.jpg":[["prices-bg-desktop@1.bec88566.jpg","images/prices-bg-desktop@1.jpg"],"images/prices-bg-desktop@1.jpg"],"./..\\images\\prices-bg-desktop@2.jpg":[["prices-bg-desktop@2.24deab83.jpg","images/prices-bg-desktop@2.jpg"],"images/prices-bg-desktop@2.jpg"],"./..\\images\\contacts-backgroundX1.jpg":[["contacts-backgroundX1.b1cd1f90.jpg","images/contacts-backgroundX1.jpg"],"images/contacts-backgroundX1.jpg"],"./..\\images\\contacts-backgroundX2.jpg":[["contacts-backgroundX2.1e33f735.jpg","images/contacts-backgroundX2.jpg"],"images/contacts-backgroundX2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\стрижка1.jpg":[["стрижка1.a2faef16.jpg","images/стрижка1.jpg"],"images/стрижка1.jpg"],"./..\\images\\стрижка1-2x.jpg":[["стрижка1-2x.667cd721.jpg","images/стрижка1-2x.jpg"],"images/стрижка1-2x.jpg"],"./..\\images\\стрижка2.jpg":[["стрижка2.876f7b82.jpg","images/стрижка2.jpg"],"images/стрижка2.jpg"],"./..\\images\\стрижка2-2x.jpg":[["стрижка2-2x.2c803777.jpg","images/стрижка2-2x.jpg"],"images/стрижка2-2x.jpg"],"./..\\images\\стрижка3.jpg":[["стрижка3.41196f0e.jpg","images/стрижка3.jpg"],"images/стрижка3.jpg"],"./..\\images\\стрижка3-2x.jpg":[["стрижка3-2x.658b7d87.jpg","images/стрижка3-2x.jpg"],"images/стрижка3-2x.jpg"],"./..\\images\\services-bg@1.jpg":[["services-bg@1.4b2bc2f5.jpg","images/services-bg@1.jpg"],"images/services-bg@1.jpg"],"./..\\images\\services-bg@2.jpg":[["services-bg@2.b7970889.jpg","images/services-bg@2.jpg"],"images/services-bg@2.jpg"],"./..\\images\\services-bg-tab@1.jpg":[["services-bg-tab@1.b3e5b96a.jpg","images/services-bg-tab@1.jpg"],"images/services-bg-tab@1.jpg"],"./..\\images\\services-bg-tab@2.jpg":[["services-bg-tab@2.985a825f.jpg","images/services-bg-tab@2.jpg"],"images/services-bg-tab@2.jpg"],"./..\\images\\prices-bg-desktop@1.jpg":[["prices-bg-desktop@1.bec88566.jpg","images/prices-bg-desktop@1.jpg"],"images/prices-bg-desktop@1.jpg"],"./..\\images\\prices-bg-desktop@2.jpg":[["prices-bg-desktop@2.24deab83.jpg","images/prices-bg-desktop@2.jpg"],"images/prices-bg-desktop@2.jpg"],"./..\\images\\contacts-backgroundX1.jpg":[["contacts-backgroundX1.b1cd1f90.jpg","images/contacts-backgroundX1.jpg"],"images/contacts-backgroundX1.jpg"],"./..\\images\\contacts-backgroundX2.jpg":[["contacts-backgroundX2.1e33f735.jpg","images/contacts-backgroundX2.jpg"],"images/contacts-backgroundX2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.521f9405.js.map
