@@ -142,6 +142,16 @@
   padding: 0;
   margin: 0;
 
+  @media screen and (max-width: 439px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+
+    color: $text-color;
+  }
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

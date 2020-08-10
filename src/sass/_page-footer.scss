@@ -31,7 +31,7 @@ a {
   align-items: center;
 
   @media screen and(max-width: 439px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 

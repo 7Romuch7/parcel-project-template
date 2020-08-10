@@ -174,6 +174,16 @@
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: $white-color;
+
+    @media screen and (max-width: 439px) {
+        margin-top: 17px;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: $white-color;
+    }
 }
 
 .tagline {
