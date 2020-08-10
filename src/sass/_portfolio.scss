@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
 
-    padding-right: 31px;
     margin: 0px 0px 44px 0px;
     font-family: $basic-font;
     font-weight: 600;
@@ -11,11 +10,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $title-color;
-    vertical-align: center;
 
     &::before {
         content: '';
-        display: inline-flex;
         height: 1px;
         width: 60px;
         margin-right: 20px;
