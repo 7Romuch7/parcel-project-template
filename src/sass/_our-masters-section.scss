@@ -18,63 +18,6 @@
   }
 }
 
-// .section-manifest {
-//     display: flex;
-//     align-items: center;
-
-//     margin-bottom: 20px;
-//     font-family: $basic-font;
-//     font-weight: 600;
-//     font-size: 11px;
-//     line-height: 1.36;
-//     letter-spacing: 0.1em;
-//     text-transform: uppercase;
-//     color: $title-color;
-
-//     &::before {
-//       content: '';
-//       height: 1px;
-//       width: 60px;
-//       margin-right: 20px;
-//       background-color: $title-color;
-//     }
-// }
-
-// .title-master {
-//   margin-bottom: 44px;
-//   font-family: $secondary-font;
-//   font-weight: 700;
-//   font-size: 42px;
-//   line-height: 1.17;
-//   letter-spacing: 0.05em;
-//   color: $title-color;
-// }
-
-// .master-container {
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @media screen and(min-width: 480px) and(max-width: 767px) {
-//     padding-left: 31px;
-//     padding-right: 31px;
-//     width: 480px;
-//   }
-
-//   @media screen and(min-width: 768px) {
-//     width: 768px;
-//     padding-left: 159px;
-//     padding-right: 159px;
-//   }
-
-//   @media screen and(min-width: 1200px) {
-//     width: 1200px;
-//     padding-left: 55px;
-//     padding-right: 55px;
-//   }
-// }
-
 .masters-block {
   margin-left: auto;
   margin-right: auto;
@@ -83,23 +26,21 @@
     max-width: 418px;
   }
 
-  @media screen and(min-width: 768px) and (max-width: 1199px) {
+  @media screen and(min-width: $tablet) and (max-width: 1199px) {
     max-width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 1170px;
   }
 }
 
 .master-list {
   display: block;
-
   list-style: none;
-  // padding: 0px;
-  // margin: 0px;
+  
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,13 +48,14 @@
 }
 
 /*оформление карточки участника команды*/
+
 .master-list-item {
   @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 64px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 60px) / 3);
 
     margin-bottom: 0;
@@ -131,11 +73,12 @@
 }
 
 /*Имя цчастника команды*/
+
 .master-name-text {
   margin-bottom: 8px;
   font-family: $basic-font;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;

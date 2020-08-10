@@ -1,13 +1,8 @@
 .services {
-  // padding-top: 84px;
-  // padding-bottom: 84px;
-  // padding-left: 31px;
-  // padding-right: 31px;
-
   width: 100%;
   min-height: 826x;
 
-  background-color: black;
+  background-color: $black-color;
   background-image: linear-gradient(
       rgba(17, 19, 25, 0.7),
       rgba(17, 19, 25, 0.8)
@@ -25,11 +20,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    // padding-top: 100px;
-    // padding-bottom: 100px;
-    // padding-left: 39px;
-    // padding-right: 39px;
-    // min-height: 858px;
 
     background-image: linear-gradient(
         rgba(17, 19, 25, 0.7),
@@ -47,11 +37,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // padding-top: 130px;
-    // padding-bottom: 130px;
-    // padding-left: 55px;
-    // padding-right: 55px;
-    // min-height: 718px;
 
     background-image: linear-gradient(
         rgba(17, 19, 25, 0.7),
@@ -68,6 +53,7 @@
     }
   }
 }
+
 .container.addstyles {
   padding-left: 31px;
   padding-right: 31px;
@@ -80,10 +66,10 @@
     padding-right: 55px;
   }
 }
+
 .section-subtitle {
   position: relative;
   margin: 0 0 20px 80px;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -100,26 +86,27 @@
     top: 7px;
     display: inline-flex;
     align-items: center;
-    // justify-content: center;
     height: 1px;
     width: 60px;
 
     margin-right: 20px;
 
-    background-color: rgba(157, 164, 189, 0.6);
+    background-color: $text-color3;
   }
 }
+
 .section-title {
   margin: 0 0 44px 0;
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 
   color: $white-color;
 }
+
 .overlay {
   @media screen and (max-width: 1199px) {
     padding: 30px;
@@ -132,6 +119,7 @@
     );
   }
 }
+
 .overlay-desktop {
   @media screen and (min-width: $desktop) {
     display: block;
@@ -147,16 +135,15 @@
     );
   }
 }
+
 .price-list {
   list-style: none;
 
   padding: 0;
   margin: 0;
-  // width: 100%;
 
-  font-family: Open Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 2.14;
   letter-spacing: 0.02em;
@@ -174,12 +161,14 @@
     flex-wrap: nowrap;
   }
 }
+
 .item-service {
   margin-bottom: 20px;
 
   display: flex;
   flex-direction: row;
 }
+
 .line {
   height: 1px;
 
@@ -188,12 +177,14 @@
 
   transform: translateY(22px);
 }
+
 .element {
   display: block;
   margin-left: 0;
   margin-right: 6px;
   white-space: nowrap;
 }
+
 .price {
   display: block;
   margin-right: 0;
@@ -205,11 +196,8 @@
   display: block;
   margin-bottom: 0;
   margin-top: 50px;
-  // margin-left: auto;
-  // margin-right: auto;
   padding: 0;
 
-  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -236,13 +224,8 @@
     background-color: $hover-color;
   }
 }
+
 .center {
   display: flex;
   justify-content: center;
-
-  // margin-right: auto;
-  // margin-left: auto;
-
-  // display: block;
-  // text-align: center;
 }

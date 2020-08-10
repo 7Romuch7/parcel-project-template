@@ -3,29 +3,19 @@
   padding-top: 0;
 }
 
-ul {
-  margin: 0;
-  padding-left: 0;
-}
 a {
   display: inline-block;
 }
-li {
-  list-style: none;
-}
-p {
-  margin: 0;
-}
 
 .contacts-section {
-  background-color: #191c26;
-  font-family: Raleway, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: $contacts-section-bgr;
+  font-family: $secondary-font;
 }
 
 .contacts-title {
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
@@ -37,17 +27,16 @@ p {
   padding: 0px 0px;
   width: 100%;
   border-bottom: 1px solid $label-color;
-  font-family: Open Sans;
+  font-family: $basic-font;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-  color: rgba(157, 164, 189, 0.4);
+  color: $label-color;
   display: flex;
   flex-direction: column;
 
-  /* justify-content: center; */
 }
 .form-label {
   position: absolute;
@@ -93,7 +82,6 @@ p {
 }
 
 .knock {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -106,12 +94,12 @@ p {
   padding: 12px 38px;
   width: 160px;
   height: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  
   border: 1px solid $hover-color;
   border-radius: 25px;
   color: $white-color;
   background-color: inherit;
+
   &:hover {
     background-color: $hover-color;
     color: $white-color;
@@ -122,6 +110,7 @@ p {
   width: 100%;
   display: block;
   position: relative;
+
   &::after {
     content: '';
     background: url(../images/contacts-backgroundX1.jpg);
@@ -157,7 +146,7 @@ p {
 .contacts-block {
   position: relative;
   z-index: 1;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
 
@@ -166,7 +155,7 @@ p {
       width: calc((100% - 2 * 15px) / 2);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: block;
     .our-contacts {
       padding-right: 15px;
@@ -174,9 +163,8 @@ p {
   }
 }
 .contacts-text {
-  font-family: Open Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
@@ -206,11 +194,8 @@ p {
 
   &::before {
     content: ' ';
-    /* position: absolute; */
     width: 60px;
     height: 1px;
-    /* left: 0px; */
-    /* bottom: 60px; */
     background-color: $text-color3;
     margin-right: 20px;
     
@@ -223,7 +208,7 @@ p {
 }
 
 .contacts-form {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     form {
       display: flex;
       flex-wrap: wrap;
@@ -234,20 +219,15 @@ p {
       }
     }
   }
-  @media screen and (min-width: 1200px) {
-    /* form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    } */
-  }
+
   .contacts-title,
   .knock {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
   }
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 767px) {
     .contacts-title,
     .knock {
       text-align: center;
@@ -257,7 +237,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .contacts-section {
     display: flex;
     flex-wrap: wrap;

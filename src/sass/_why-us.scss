@@ -3,16 +3,6 @@ p{
   margin: 0;
 }
 
-// .section-whyUs {
-//   background-color: $white-color;
-// }
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-top: 84px;
-//   padding-bottom: 84px;  
-// }
-
 .flex-reverse{
 
   @media screen and(min-width:$mobile){
@@ -78,7 +68,7 @@ p{
 .title-section {
   font-weight: $basic-font;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
