@@ -29,6 +29,10 @@ a {
   justify-content: center;
   margin-left: auto;
   align-items: center;
+
+  @media screen and(max-width: 439px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .instagram {
@@ -80,7 +84,7 @@ a {
     padding-right: 31px;
     padding-bottom: 30px;
   }
-  
+
   .left-part-footer {
     padding-left: 31px;
     padding-top: 20px;
